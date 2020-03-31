@@ -1,0 +1,108 @@
+.container {
+  width: 100%;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  margin-top: 50px;
+  position: relative;
+  width: 100%;
+
+  > label {
+    font-weight: bold;
+    color: #f1f1f1;
+    font-size: 32px;
+  }
+}
+
+.content {
+  margin-top: 20px;
+  width: 100%;
+}
+
+.box {
+  margin-top: 10px;
+  width: 90%;
+  font-size: 22px;
+  background: #212027;
+  border-radius: 5px;
+  color: #f1f1f1;
+  margin-bottom: 30px;
+}
+
+.search {
+  > input {
+    width: 95%;
+    height: 30px;
+    background: transparent;
+    border: 1px solid #212027;
+    padding: 15px;
+    font-size: 14px;
+    color: #f1f1f1;
+  }
+
+  > button {
+    background: transparent;
+    border: 0;
+    height: 40px;
+    margin-left: -80px;
+    color: #f1f1f1;
+
+    &:hover {
+      cursor: pointer;
+      color: #a3a3a3;
+    }
+  }
+}
+
+.card {
+  padding: 20px;
+  display: flex;
+}
+
+.cardAvatar {
+  width: 50px;
+  border-radius: 10px;
+  align-content: center;
+}
+
+.CardTitle {
+  color: #f1f1f1;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 10px;
+  align-items: center;
+  align-content: center;
+  &:hover {
+    border-bottom: 1px solid #f1f1f1;
+  }
+}
+
+.CardDescription {
+  color: #a3a3a3;
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+.CardLeftSide {
+  width: 85%;
+  display: flex;
+}
+
+.CardRightSide {
+  display: flex;
+  font-size: 12px;
+  align-self: center;
+}
+
+.CardDetails {
+  margin-left: 10px;
+}
+
+.ShowLabelResult {
+  width: 90%;
+  text-align: center;
+  color: #f1f1f1;
+}

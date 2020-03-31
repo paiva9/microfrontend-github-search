@@ -1,0 +1,37 @@
+{
+  "name": "app-search-github",
+  "version": "1.0.0",
+  "description": "Main app to show micro-frontend apps",
+  "scripts": {
+    "up:repositories": "cd ../searchRepositories && npm run watch:asg",
+    "up:users": "cd ../searchUsers && npm run watch:asg",
+    "up:sidebar": "cd ../Sidebar && npm run watch:asg",
+    "start": "concurrently \"npm run up:repositories\" \"npm run up:users\" \"npm run up:sidebar\" \"npm run watch\"",
+    "watch": "webpack-dev-server --port 9000",
+    "build": "webpack -p --progress"
+  },
+  "author": "Charlles Paiva",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "copy-webpack-plugin": "^4.5.1",
+    "css-loader": "^3.4.2",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.13.1",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.1.3",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  },
+  "dependencies": {
+    "concurrently": "^5.1.0",
+    "single-spa": "^4.0.0",
+    "systemjs": "^0.21.4",
+    "zone.js": "^0.8.26"
+  }
+}
